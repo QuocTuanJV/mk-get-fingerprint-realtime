@@ -58,6 +58,8 @@ function disconnect() {
         webSocket.close();
         webSocket = null;
     }
+    var img = document.querySelector("#imgDisplay");
+    img.src = "";
     setConnected(false);
 }
 
